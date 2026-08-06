@@ -1,19 +1,29 @@
 {
   "team_id": "example",
-  "team_name": "Example Team (replace me)",
-  "contact": "name@institution.edu",
+  "team_name": "mimowi",
+  "contact": "soeren.michallek@fernuni-hagen.de",
   "creators": [
     {
-      "name": "Lastname, Firstname",
-      "affiliation": "Your institution",
-      "orcid": ""
-    }
+      "name": "Michallek, Sören",
+      "affiliation": "FernUniversität in Hagen",
+      "orcid": "https://orcid.org/0009-0009-1947-4242"
+    },
+    {
+      "name": "Möller, Sophie",
+      "affiliation": "FernUniversität in Hagen",
+      "orcid": "https://orcid.org/000-0003-9611-1214"
+    },
+    {
+      "name": "Wingen, Tobias",
+      "affiliation": "FernUniversität in Hagen",
+      "orcid": "https://orcid.org/0000-0002-1559-859X"
+    }    
   ],
   "abstract": "",
   "license": "CC-BY-4.0",
-  "tier": 1,
+  "tier": 3,
   "entry": "primary",
-  "approach_family": "per-respondent simulation, single model",
+  "approach_family": "direct forecasting",
   "models": [
     "gpt-4o-mini-2024-07-18"
   ],
