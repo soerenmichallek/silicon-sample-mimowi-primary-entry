@@ -1,5 +1,5 @@
 {
-  "team_id": "example",
+  "team_id": "mimowi",
   "team_name": "mimowi",
   "contact": "soeren.michallek@fernuni-hagen.de",
   "creators": [
@@ -17,7 +17,7 @@
       "name": "Wingen, Tobias",
       "affiliation": "FernUniversität in Hagen",
       "orcid": "https://orcid.org/0000-0002-1559-859X"
-    }    
+    }
   ],
   "abstract": "",
   "license": "CC-BY-4.0",
@@ -27,15 +27,15 @@
   "models": [
     "gpt-4o-mini-2024-07-18"
   ],
-  "code_repository": "https://github.com/your-team/your-repo",
+  "code_repository": "https://github.com/soerenmichallek/silicon-sample-mimowi-primary-entry",
   "code_doi": null,
   "disclosure_class": "A",
   "escrow_doi": null,
   "zenodo_doi": null,
   "prediction_files": [
     {
-      "file": "predictions/example_T1_primary_v1.csv",
-      "sha256": "0f24e117fcf6803743a12ab43f42bf8b0a7893fb9a706e5303cae3eadb79cc59"
+      "file": "predictions/mimowi_T3_primary_v1.csv",
+      "sha256": "86a90536d583d96b07bba6ac5447842c4426c33d2c67703ddca76f4e8c9333c0"
     }
   ],
   "coverage": {
