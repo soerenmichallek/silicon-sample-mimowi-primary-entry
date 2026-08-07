@@ -1,0 +1,5 @@
+﻿key,value
+control_summary,"Participants read one of three randomly assigned neutral, off-topic texts about the history of neckties, the rules of baseball, or different types of dance."
+sample_summary,"Participants are recruited from a non-probability opt-in panel, quota-matched on age, gender, and race/ethnicity to the population of U.S. residents aged 18 or older, and pass a series of attention and bot-detection checks before treatment assignment."
+ate_definition,Condition 2 minus Condition 1 (intervention minus control).
+prediction_unit,Percentage points of the dependent variable's full scale range.
