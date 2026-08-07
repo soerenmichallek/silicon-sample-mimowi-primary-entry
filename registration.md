@@ -12,15 +12,15 @@ sections (B) once per model. See the call's *Disclosure policy* for escrow rules
 ---
 
 ## 0 · Approach identity and output
-- **0.1 Team ★** — name, the one or two members (teams are at most two, unless a larger team was approved on request), affiliations, corresponding contact:
-- **0.2 Plain-language summary ★** — one paragraph, what the approach does (not how):
-- **0.3 Submission tier & approach family ★** — tier (1/2/3); family (e.g. per-respondent simulation / agent / direct forecast; single model / ensemble / multi-agent; zero-shot / literature-conditioned):
-- **0.4 Pipeline diagram** — ordered steps from raw inputs to submitted file:
-- **0.5 Coverage ★** — number of respondents/cells/estimates; mapping to conditions. Full coverage is required: every submission predicts **all 16 interventions and all 13 outcomes** (partial coverage is not accepted). Confirm here:
+- **0.1 Team ★** — name, the one or two members (teams are at most two, unless a larger team was approved on request), affiliations, corresponding contact: names: Sören Michallek, Sophie Möller, Tobias Wingen; affiliations: FernUniversität in Hagen; corresponding contact: soeren.michallek@fernuni-hagen.de
+- **0.2 Plain-language summary ★** — one paragraph, what the approach does (not how): In this approach we model a low-barrier-of-entry workflow using a s
+- **0.3 Submission tier & approach family ★** — tier (1/2/3); family (e.g. per-respondent simulation / agent / direct forecast; single model / ensemble / multi-agent; zero-shot / literature-conditioned): tier 3; family: direct forecast
+- **0.4 Pipeline diagram** — ordered steps from raw inputs to submitted file: general prompt creation -> transmission of prompt, survey material, and outcome-intervention material -> return of individual prediction -> repetition until 5 predictions per outcome-intervention pair have been reached -> computation of median ATE -> repetition for all other outcome-intervention pairs -> generation of prediction file
+- **0.5 Coverage ★** — number of respondents/cells/estimates; mapping to conditions. Full coverage is required: every submission predicts **all 16 interventions and all 13 outcomes** (partial coverage is not accepted). Confirm here: Full coverage has been achieved
 
 ## A · Scope of LLM use
 - **A.1 Purpose** — every workflow stage where LLMs are used:
-- **A.2 Degree of automation ★** — confirm fully automated, no human in the loop at prediction time; note any exception:
+- **A.2 Degree of automation ★** — confirm fully automated, no human in the loop at prediction time; note any exception: the approach was fully automated.
 
 ## B · Model / system details (once per model)
 - **B.1 Model name(s)** — exact identifiers incl. provider, size, version/timestamp, source link:
@@ -37,9 +37,9 @@ sections (B) once per model. See the call's *Disclosure policy* for escrow rules
 - **C.3 Prompt-design rationale** — brief rationale for the prompt design: why prompts were structured as they were, and the reasoning behind major design choices (recommended, not required):
 
 ## D · Persona / profile construction (Tiers 1–2)
-- **D.1 Profile source** — source of demographic profiles you constructed: a public survey (e.g. GSS / ANES / Census), other survey, fully synthetic, or none. The benchmark ships no participant pool; report how you built yours, incl. condition assignments:
-- **D.2 Profile verbalization** — which variables, rendered how (template vs generated narrative; if generated: model + prompt):
-- **D.3 Assignment & weighting** — number of personas, assignment to conditions (your responsibility, all 17 conditions), reuse, weighting/matching:
+- **D.1 Profile source** — source of demographic profiles you constructed: a public survey (e.g. GSS / ANES / Census), other survey, fully synthetic, or none. The benchmark ships no participant pool; report how you built yours, incl. condition assignments: NA
+- **D.2 Profile verbalization** — which variables, rendered how (template vs generated narrative; if generated: model + prompt): NA
+- **D.3 Assignment & weighting** — number of personas, assignment to conditions (your responsibility, all 17 conditions), reuse, weighting/matching: NA
 
 ## E · Stimulus and survey administration
 - **E.1 Stimulus presentation** — verbatim vs paraphrase; how state-contingent content is handled:
@@ -48,20 +48,20 @@ sections (B) once per model. See the call's *Disclosure policy* for escrow rules
 
 ## F · Stochasticity and aggregation
 - **F.1 Runs & seeds** — runs per respondent/item/estimate; seeds; reproducibility under identical settings:
-- **F.2 Aggregation rule** — how multiple generations become submitted values (mean/median/mode/first/sampled/…):
+- **F.2 Aggregation rule** — how multiple generations become submitted values (mean/median/mode/first/sampled/…): computation of median of the five values per outcome-intervention pair.
 
 ## G · Validation & post-processing
-- **G.1 Human validation** — any human review of outputs (often N/A):
-- **G.2 Post-processing** — parsing rules; handling of refusals/malformed/missing/out-of-range; exclusions; for approaches that generate individual responses, the resulting effective N per condition (descriptive disclosure, not a scoring input):
-- **G.3 Calibration corrections** — any post-hoc scaling/shifting/debiasing and exactly what data it was fit on (cross-ref H/I):
+- **G.1 Human validation** — any human review of outputs (often N/A): no human validation besides a sanity check of the correct outcome format (i.e., validating that the generated .csv indeed contains the needed information for the submission)
+- **G.2 Post-processing** — parsing rules; handling of refusals/malformed/missing/out-of-range; exclusions; for approaches that generate individual responses, the resulting effective N per condition (descriptive disclosure, not a scoring input): NA
+- **G.3 Calibration corrections** — any post-hoc scaling/shifting/debiasing and exactly what data it was fit on (cross-ref H/I): NA
 
 ## H · Learning and conditioning components
 - **H.1 Fine-tuning data** — exact corpus (hashes/DOIs), hyperparameters, checkpoints:
 - **H.2 Context & retrieval corpora** — exact document set in context / indexed, archived in the deposit:
 
 ## I · Data inputs, blinding, and competing interests
-- **I.1 Competing interests ★** — funding, in-kind compute/model access, relationships with LLM-interested entities:
-- **I.2 External human data †** — all external human datasets that informed the approach anywhere (training/fine-tuning/retrieval/ICL/calibration):
+- **I.1 Competing interests ★** — funding, in-kind compute/model access, relationships with LLM-interested entities: NA
+- **I.2 External human data †** — all external human datasets that informed the approach anywhere (training/fine-tuning/retrieval/ICL/calibration): NA
 - **I.3 Blinding attestation ★** — **mandatory.** Signed attestation that no team member accessed, solicited, or was shown any human outcome data from this study, including pilots, before the prediction lock:
 - **I.4 Contamination note †** — training cutoff of every model vs public release dates of this project's materials; note any known exposure:
 
@@ -71,7 +71,7 @@ sections (B) once per model. See the call's *Disclosure policy* for escrow rules
 ## K · Reproducibility & frozen artifacts
 - **K.1 Code & materials** — link/DOI, secrets removed, determinism/seeds documented (also record the link in `metadata.json` → `code_repository` / `code_doi`):
 - **K.2 Raw output logs †** — complete unprocessed model responses archived, hashed, time-stamped (required for Tiers 1–2, public or escrowed; Tier 3 where intermediate generations exist; oversized logs may be a separate linked Zenodo upload):
-- **K.3 Computational resources** — API-call counts, total tokens, cost, compute time:
+- **K.3 Computational resources** — API-call counts, total tokens, cost, compute time: API-call count = 1040; total tokens = 873.163; cost = $11.6414; compute time: 1104,8813 seconds
 
 ## L · Disclosure class
 Each item above is deposited as **public**, **escrowed** (sealed from the public but available to the
@@ -80,8 +80,6 @@ still verifiable — an embargo with a sunset date is encouraged), or **withheld
 items marked neither ★ nor †). Your entry's class is set by its **most restricted item** and recorded
 in `metadata.json` → `disclosure_class` (and `escrow_doi` if anything is escrowed):
 - **A · Open** — all items public. Full results-table standing; all features enter the design-choice analysis.
-- **B · Escrowed** — some items sealed but every item is available to the core team/auditors under confidentiality. Full standing with an *escrowed* badge; only publicly disclosed features enter the design-choice analysis.
-- **C · Sealed** — one or more permitted items withheld even from escrow. Scored and reported with a *not independently verifiable* flag; excluded from the approach catalogue and design-choice analysis.
 
 ★ items must always be public (never escrowed or withheld); † items must be at minimum escrowed. Full
 policy: <https://janpfander.github.io/llm_predictions_megastudy/#disclosure>
