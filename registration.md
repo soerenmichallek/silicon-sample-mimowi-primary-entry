@@ -32,9 +32,9 @@ sections (B) once per model. See the call's *Disclosure policy* for escrow rules
 - **B.7 Ensembles** — members + exact aggregation rule: NA
 
 ## C · Prompts
-- **C.1 Exact prompts** — verbatim text or link to deposited file; were they iteratively refined? pre-specified vs in response to outputs: the prompt text can be found in scripts\mimowi_T3_final_Fable_submission.R, while an overview over each request we sent (including the prompt) can be found in frozen_artifacts\request_manifest.csv.
+- **C.1 Exact prompts** — verbatim text or link to deposited file; were they iteratively refined? pre-specified vs in response to outputs: the prompt text can be found in scripts\team_12_T3_final_Fable_submission.R, while an overview over each request we sent (including the prompt) can be found in frozen_artifacts\request_manifest.csv.
 - **C.2 System-wide instructions**: NA
-- **C.3 Prompt-design rationale** — brief rationale for the prompt design: why prompts were structured as they were, and the reasoning behind major design choices (recommended, not required):
+- **C.3 Prompt-design rationale** — brief rationale for the prompt design: why prompts were structured as they were, and the reasoning behind major design choices (recommended, not required): This approach models how an informed researcher might approach AI forecasting. It focuses on simplicitly. The prompt was engineered iteratively based on the  HaGenAI approach (https://osf.io/preprints/psyarxiv/m8p42_v1). We created a prompt that an average researcher might be able to use in conjunction with an LLM of their choice, matching a highly relevant real-world application for researchers outside of the field of AI forecasting.
 
 ## D · Persona / profile construction (Tiers 1–2)
 - **D.1 Profile source** — source of demographic profiles you constructed: a public survey (e.g. GSS / ANES / Census), other survey, fully synthetic, or none. The benchmark ships no participant pool; report how you built yours, incl. condition assignments: NA
@@ -56,7 +56,7 @@ sections (B) once per model. See the call's *Disclosure policy* for escrow rules
 - **G.3 Calibration corrections** — any post-hoc scaling/shifting/debiasing and exactly what data it was fit on (cross-ref H/I): NA
 
 ## H · Learning and conditioning components
-- **H.1 Fine-tuning data** — exact corpus (hashes/DOIs), hyperparameters, checkpoints:
+- **H.1 Fine-tuning data** — exact corpus (hashes/DOIs), hyperparameters, checkpoints: NA
 - **H.2 Context & retrieval corpora** — exact document set in context / indexed, archived in the deposit: the model was given a description of the conditions (frozen_artifacts\conditions.csv) and outcomes (frozen_artifacts\outcomes.csv), as well as a summary of the control condition and the sample, definitions of ate and a description of the scale (frozen_artifacts\study_constants.csv).
 
 ## I · Data inputs, blinding, and competing interests

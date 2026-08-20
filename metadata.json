@@ -1,22 +1,22 @@
 {
-  "team_id": "mimowi",
+  "team_id": "team_12",
   "team_name": "mimowi",
   "contact": "soeren.michallek@fernuni-hagen.de",
   "creators": [
     {
       "name": "Michallek, Sören",
       "affiliation": "FernUniversität in Hagen",
-      "orcid": "https://orcid.org/0009-0009-1947-4242"
+      "orcid": "0009-0009-1947-4242"
     },
     {
       "name": "Möller, Sophie",
       "affiliation": "FernUniversität in Hagen",
-      "orcid": "https://orcid.org/000-0003-9611-1214"
+      "orcid": "0009-0003-9611-1214"
     },
     {
       "name": "Wingen, Tobias",
       "affiliation": "FernUniversität in Hagen",
-      "orcid": "https://orcid.org/0000-0002-1559-859X"
+      "orcid": "0000-0002-1559-859X"
     }
   ],
   "abstract": "We generated direct forecasts using Anthropic's Claude Fable 5, which we prompted directly with the study materials for each intervention-outcome pair. This approach models a low-barrier-of-entry workflow that is potentially suitable for applied researchers. It is based on the approach used in the HaGenAi project (https://osf.io/preprints/psyarxiv/m8p42_v1). For every intervention-outcome pair, the model received a description of the control condition, the intervention, the study sample, and the outcome measure, and was asked to predict the average treatment effect as a single numeric estimate expressed in percentage points of the outcome's full scale. Five separate predictions were obtained for each intervention-outcome pair, and the median prediction was used as the final submitted estimate. No form of model fine-tuning was employed. Post-processing of the individual predictions was limited to converting predictions expressed in percentage points of the dependent variable’s full scale range to the required raw scale where necessary, followed by the computation of the median prediction across repetitions.",
@@ -34,7 +34,7 @@
   "zenodo_doi": null,
   "prediction_files": [
     {
-      "file": "predictions/mimowi_T3_primary_v1.csv",
+      "file": "predictions/team_12_T3_primary_v1.csv",
       "sha256": "86a90536d583d96b07bba6ac5447842c4426c33d2c67703ddca76f4e8c9333c0"
     }
   ],

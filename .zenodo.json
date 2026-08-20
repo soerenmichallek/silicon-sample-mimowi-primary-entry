@@ -1,0 +1,57 @@
+{
+  "upload_type": "software",
+  "title": "Silicon Sample Benchmark — Tier 3 (direct effect forecast) submission (team team_12)",
+  "version": "1.0-t3",
+  "language": "eng",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Michallek, Sören",
+      "affiliation": "FernUniversität in Hagen",
+      "orcid": "0009-0009-1947-4242"
+    },
+    {
+      "name": "Möller, Sophie",
+      "affiliation": "FernUniversität in Hagen",
+      "orcid": "0009-0003-9611-1214"
+    },
+    {
+      "name": "Wingen, Tobias",
+      "affiliation": "FernUniversität in Hagen",
+      "orcid": "0000-0002-1559-859X"
+    }
+  ],
+  "description": "<p>We generated direct forecasts using Anthropic's Claude Fable 5, which we prompted directly with the study materials for each intervention-outcome pair. This approach models a low-barrier-of-entry workflow that is potentially suitable for applied researchers. It is based on the approach used in the HaGenAi project (https://osf.io/preprints/psyarxiv/m8p42_v1). For every intervention-outcome pair, the model received a description of the control condition, the intervention, the study sample, and the outcome measure, and was asked to predict the average treatment effect as a single numeric estimate expressed in percentage points of the outcome's full scale. Five separate predictions were obtained for each intervention-outcome pair, and the median prediction was used as the final submitted estimate. No form of model fine-tuning was employed. Post-processing of the individual predictions was limited to converting predictions expressed in percentage points of the dependent variable’s full scale range to the required raw scale where necessary, followed by the computation of the median prediction across repetitions.<\/p>",
+  "keywords": [
+    "Silicon Sample Benchmark",
+    "silicon sampling",
+    "large language models",
+    "computational social science",
+    "survey methodology",
+    "public opinion",
+    "climate communication",
+    "treatment effect prediction"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://janpfander.github.io/llm_predictions_megastudy/",
+      "relation": "isPartOf",
+      "scheme": "url",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://janpfander.github.io/llm_predictions_megastudy/amendment_preregistration.html",
+      "relation": "references",
+      "scheme": "url",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/soerenmichallek/silicon-sample-mimowi-primary-entry",
+      "relation": "isCompiledBy",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Team team_12. Disclosure class A."
+}
