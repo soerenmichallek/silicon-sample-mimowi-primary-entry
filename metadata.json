@@ -31,7 +31,7 @@
   "code_doi": null,
   "disclosure_class": "A",
   "escrow_doi": null,
-  "zenodo_doi": null,
+  "zenodo_doi": "https://doi.org/10.5281/zenodo.22047422",
   "prediction_files": [
     {
       "file": "predictions/team_12_T3_primary_v1.csv",
